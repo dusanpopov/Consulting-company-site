@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utilities */
+
+.text--primary {
+    color: #ff6348;
+
+}
+
+.text--primary--white {
+    color: #fff;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.lg--heading {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    line-height: 1.1;
+}
+
+.md--heading {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    line-height: 1.1;
+    padding: 1.5rem 0;
+
+}
+
+.lead {
+
+    margin-bottom: 2rem;
+}
+
+.showcase__button {
+    display: inline-block;
+    color: #fff;
+    background-color: #ff6348;
+    padding: 0.5rem 2rem;
+    border: none;
+
+}
+
+.showcase__button:hover {
+    background-color: #ff401e;
+}
+
+
+/* Navbar */
+
+.main--navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #2f3542;
+    color: #fff;
+    z-index: 99;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.main--navbar__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.main--navbar__list__link {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+.main--navbar__list__link:hover {
+    background-color: #ff6348;
+    border-radius: .3rem;
+}
+
+/* Showcase */
+
+.showcase {
+    background: url(../img/showcase.jpeg) no-repeat center center/cover;
+    height: 100vh;
+    color: black;
+
+}
+
+.showcase__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+/* Activities */
+
+.activities__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.activities__container__items {
+    display: flex;
+    padding: 1rem;
+}
+
+.activities__container__item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.activities__container__item i {
+    background-color: #FF6348;
+    padding: 3rem;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+
+/* About */
+
+.about {
+    display: flex;
+}
+
+.about__img,
+.about__text {
+    flex: 1;
+}
+
+.about__img {
+    background: url(../img/team.jpeg) no-repeat center center/cover;
+}
+
+.about__text {
+    background-color: #ff401e;
+    text-align: center;
+}
+
+.about__text__paragraph {
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Contacts */
+
+.contact {
+    background-color: #b2bec3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact__title {
+    margin: 0;
+}
+
+.contact__form,
+.form--group {
+    margin: 0.75rem;
+    padding: .3rem 3rem;
+}
+
+.form--group__label {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.name,
+.email,
+.message {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact__button {
+    width: 95%;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: .6rem .8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+
+.main--footer {
+    background-color: #2F3542;
+    color: white;
+}
